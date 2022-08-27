@@ -1,0 +1,285 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container px-8">
+  <header class="d-flex justify-content-between align-items-center pb-8 mb-3">
+    <div class="d-flex">
+      <h2 class="fs-4 fw-bold mb-0">Assignment</h2>
+      <div class="dropdown ms-12_5">
+        <button class="btn fw-bold p-0" type="button" id="btn-menu-all-courses" data-bs-toggle="dropdown" 
+        aria-haspopup="true"
+        aria-expanded="false"
+        >
+          All Courses
+          <span class="material-icons text-success ms-2">
+            expand_more
+          </span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btn-menu-all-courses">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <a class="d-inline-block" href="#">
+        <span class="material-icons">
+          search
+        </span>
+      </a>
+      <a class="d-inline-block ms-6" href="#">
+        <span class="material-icons">
+          notifications_active
+        </span>        
+      </a>
+    </div>
+  </header>
+  <div class="row mx-0">
+    <section class="col-4 px-0">
+      <div class="dropdown mb-1">
+        <button class="btn fw-bold p-0" type="button" id="btn-menu-all-courses" data-bs-toggle="dropdown" 
+        aria-haspopup="true"
+        aria-expanded="false"
+        >
+          All(4)
+          <span class="material-icons text-success ms-2">
+            expand_more
+          </span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btn-menu-all-courses">
+          <li><a class="dropdown-item" href="#">All</a></li>
+          <li><a class="dropdown-item" href="#">Chapter Assignment 1</a></li>
+          <li><a class="dropdown-item" href="#">Chapter Assignment 2</a></li>
+          <li><a class="dropdown-item" href="#">Final Assignment</a></li>
+        </ul>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item bg-light">
+          <div class="d-flex justify-content-between align-items-end">
+            <p class="fs-8">
+              Chapter Assignment 2
+            </p>
+            <span class="fs-8">
+              4 hrs ago
+            </span>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <p class="fw-bold">
+              Please check this file…
+            </p>
+            <span class="fs-8 text-gray">
+              Emily Wang
+            </span>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between align-items-end">
+            <p class="fs-8">
+              Chapter Assignment 1
+            </p>
+            <span class="fs-8">
+              12 hrs ago
+            </span>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <p class="fw-bold">
+              My Homework
+            </p>
+            <span class="fs-8 text-gray">
+              David Xu
+            </span>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between align-items-end">
+            <p class="fs-8">
+              Final Assignment
+            </p>
+            <span class="fs-8">
+              18 hrs ago
+            </span>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <p class="fw-bold">
+              Have a problem with this…
+            </p>
+            <span class="fs-8 text-gray">
+              Tony Wei
+            </span>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between align-items-end">
+            <p class="fs-8">
+              Final Assignment
+            </p>
+            <span class="fs-8">
+              19 hrs ago
+            </span>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <p class="fw-bold">
+              Did I do it right?
+            </p>
+            <span class="fs-8 text-gray">
+              Christina Lin
+            </span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="col-8 ps-4 pe-0">
+      <p class="fs-8 text-gray text-end pt-1 mb-2">
+        2 comments
+      </p>
+      <div class="card mb-4">
+        <div class="card-header bg-light d-flex justify-content-between align-items-center">
+          <div>
+            <p class="fs-8">
+              Chapter Assignment 2 / HTML&CSS
+            </p>
+            <p class="fw-bold">
+              Please check this file for me, thanks!
+            </p>
+          </div>
+          <a href="#">
+            <span class="material-icons">
+              more_vert
+            </span>
+          </a>
+        </div>
+        <div class="card-body">
+          <article class="d-flex mb-4">
+            <div>
+              <img class="account-photo-size rounded-circle" src="./assets/images/photo-Emily.png">
+            </div>
+            <div class="border-bottom pb-4 ms-2">
+              <p class="fw-bold">Emily Wang</p>
+              <time class="fs-8 lh-lg text-gray mb-4">10:38 AM (4 hours ago)</time>
+              <div class="fs-7">
+                <p class="mb-4">
+                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="font-mono bg-light text-success">div</code> is bigger than the height of the <code class="font-mono bg-light text-success">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>What is the gap or extra space below image?
+                </p>
+                <a href="#" class="btn btn-outline-gray-400 bg-light" download="HW-2-David.zip"><span
+                  class="material-icons">
+                  attach_file
+                </span>HW-2-David.zip</a>
+              </div>
+            </div>
+          </article>
+          <article class="answer d-flex">
+            <div>
+              <img class="account-photo-size rounded-circle" src="./assets/images/photo-Andy.png" alt="account-photo">
+            </div>
+            <div class="fs-7 ms-2">
+              <div class="d-flex justify-content-between">
+                <p class="fw-bold">Andy Chen (You)</p>
+                <div>
+                  <a href="#">
+                    <span class="material-icons-outlined">
+                      star_outline
+                    </span>
+                  </a>
+                  <a href="#">
+                    <span class="material-icons ms-6">
+                      edit
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <time class="fs-8 lh-lg text-gray mb-4">13:24 AM (1 hours ago)</time>
+              <p class="fs-7">
+                Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                <br><br>You can:
+              </p>
+              <br>
+              <ul class="mb-0">
+                <li>
+                  adjust the <code class="font-mono bg-light text-success">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="font-mono bg-light text-success">middle</code> ) or
+                </li>
+                <li>
+                  change the <code class="font-mono bg-light text-success">display</code> so it isn’t inline.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <div class="reply-editor collapse" id="reply-editor">
+          <div id="editor"></div>
+        </div>
+      </div>
+      <footer class="d-flex justify-content-between">
+        <div>
+          <a class="p-3" class="#" href="#">
+            <span class="material-icons">
+              chevron_left
+            </span>
+          </a>
+          <a class="p-3" href="#">
+            <span class="material-icons">
+              chevron_right
+            </span>
+          </a>
+        </div>
+        <div>
+          <button id="btn-mark" type="button" class="btn btn-outline-success">Mark as read</button>
+          <button id="btn-cancel" type="button" class="btn btn-outline-success d-none"
+          data-bs-toggle="collapse"
+          data-bs-target="#reply-editor"
+          aria-expanded="false"
+          aria-controls="reply-editor"
+          >Cancel
+          </button>
+          <button
+          id="btn-reply"
+          type="button"
+          class="btn btn-success ms-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#reply-editor"
+          aria-expanded="false"
+          aria-controls="reply-editor"
+          >
+            Reply
+          </button>
+          <button
+          id="btn-reply-submit"
+          type="button"
+          class="btn btn-success ms-4 d-none"
+          >
+            Reply
+          </button>
+        </div>
+      </footer>
+    </section>
+  </div>
+</div>
+
+<!-- ckeditor5 -->
+<script>
+  ClassicEditor
+          .create( document.querySelector( '#editor' ) )
+          .then( editor => {
+                  console.log( editor );
+          } )
+          .catch( error => {
+                  console.error( error );
+          } );
+</script>
+
+<style>
+  .ck-editor__editable[role="textbox"] {
+      /* editing area */
+      min-height: 200px;
+  }
+  .ck-content .image {
+      /* block images */
+      max-width: 80%;
+      margin: 20px auto;
+  }
+</style>
+<!-- ckeditor5 end -->

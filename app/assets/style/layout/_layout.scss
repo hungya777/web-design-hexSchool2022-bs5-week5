@@ -1,0 +1,33 @@
+aside {
+  min-width: 296px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+main {
+  margin-left: 296px;
+}
+
+.material-icons, .material-icons-outlined {
+  vertical-align: bottom;
+  &:hover {
+    color: $success;
+  }
+}
+
+.nav-link {
+  padding: 12px 32px;
+  position: relative;
+  &.active {
+    color: $success;
+    &::before {
+      @include nav-bar();
+    }
+  }
+  &:hover {
+    color: $success;
+    &::before {
+      @include nav-bar();
+    }
+  }
+}

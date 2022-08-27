@@ -1,0 +1,13 @@
+.list-group-item {
+  &:hover {
+    background-color: $light;
+  }
+}
+
+/* 設定摺疊效果從 下 -> 上 開合 */
+.reply-editor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
